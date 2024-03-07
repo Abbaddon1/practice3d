@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Normatica';
+    src: url('Normatica-Light.woff2') format('woff2'),
+        url('Normatica-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Normatica Display';
+    src: url('NormaticaDisplay-Regular.woff2') format('woff2'),
+        url('NormaticaDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Normatica';
+    src: url('Normatica-Black.woff2') format('woff2'),
+        url('Normatica-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Normatica Display';
+    src: url('NormaticaDisplay-BlackItalic.woff2') format('woff2'),
+        url('NormaticaDisplay-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Normatica';
+    src: url('Normatica-Regular.woff2') format('woff2'),
+        url('Normatica-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Normatica';
+    src: url('Normatica-Thin.woff2') format('woff2'),
+        url('Normatica-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Normatica';
+    src: url('Normatica-Medium.woff2') format('woff2'),
+        url('Normatica-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Normatica Display';
+    src: url('NormaticaDisplay-Black.woff2') format('woff2'),
+        url('NormaticaDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Normatica Display';
+    src: url('NormaticaDisplay-Bold.woff2') format('woff2'),
+        url('NormaticaDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Normatica';
+    src: url('Normatica-Bold.woff2') format('woff2'),
+        url('Normatica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Normatica Display';
+    src: url('NormaticaDisplay-Medium.woff2') format('woff2'),
+        url('NormaticaDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

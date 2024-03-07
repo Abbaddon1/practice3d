@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+
+    <title>Praktika 3d</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+
+
+
+    <script src="../js/main.js" defer></script>
+    <script src="../js/mail.js" defer></script>
+
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- modal -->
+        <div class="send__form">
+            <div class="send__form__content"><p>Сообщение отправлено!</p></div>
+        </div>
+        
+        <form id="form" class="modal__opening" action="mail.php" method="POST">   
+            <input type="hidden" name="formId" value="form1">
+
+            
+            <div class="modal__content__container">
+
+                <p class="closed__modal">х</p>
+
+                <h2 class="title__modal">Оставить заявку</h2>
+
+                <label for="nameInput" class="name__modal">
+                    <input id="nameInput" 
+                    class="name__input__modal" 
+                    type="text" maxlength="20" 
+                    name="name" required 
+                    placeholder="Имя"
+                    autocomplete="off">
+                    <img src="../img/name__modal.png" alt="name__modal">
+                </label>
+                
+
+
+
+                <label for="phone__modal" class="tel__modal">
+                    <input type="tel" name="phone" 
+                            id="phone__modal"
+                            name="phone"
+                            maxlength="19" 
+                            pattern=".{19,}"
+                            title="Введите номер телефона полностью"
+                            required data-tel-input="" 
+                            placeholder="Телефон"
+                            autocomplete="off">  
+                                              
+                    <img src="../img/tel__modal.png" alt="name__modal">
+                </label>
+
+
+                <label for="com__text" class="comment__modal">
+                    <textarea id="com__text"
+                    name="message" 
+                    maxlength="300" 
+                    cols="300" 
+                    rows="5" 
+                    placeholder="Комментарий"></textarea>
+                </label>
+
+                <p class="modal__politic">Нажимая кнопку “Отправить”, вы соглашаетесь с
+                    <a class="modal__politic__link" href="#!">Политикой конфиденциальности</a></p>
+
+                <button type="submit" data-send="send-form" class="modal__button">Отправить</button>
+
+            </div>
+            
+
+        </form>
+
+    
+
+        <!-- header -->
+
+        <header class="header">
+            <div><a data-goto=".wrapper" class="header__link logo" id="logo" href="#!"><img src="../img/head__logo.svg" alt="logo"></a></div>
+            <nav class="header__nav">
+                <ul class="header__links">
+                    
+                    <li> <a data-goto=".about__me" class="header__link" href="#!">От автора</a></li>
+                    <li> <a data-goto=".services" class="header__link" href="#!">Услуги</a></li>
+                    <li> <a data-goto=".works__title" class="header__link" href="#!">Портфолио</a></li>
+                    <li> <a data-goto=".reviews" class="header__link" href="#!">Отзывы</a></li>
+                    <li> <a data-goto=".contacts__bot" class="header__link" href="#!">Контакты</a></li>
+                   
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <a class="header__tel" href="tel:+79081531283" target="_blank">+7 (908) 153-12-83</a>
+                <a class="header__social" href="https://vk.com/vf0911" target="_blank"><img src="../img/header__vk.png" alt="vk"></a>
+            </div>
+
+            <div class="burger__menu">
+                <span></span>
+            </div>
+
+            
+        </header>
+        <main class="main">
+
+        <!-- opening -->
+            <section class="opening">
+                <div class="opening__img__container">
+                    <div class="opening__img"></div>
+                </div>
+                <div class="opening__container"> 
+                    <div class="opening__circle__bg1"></div>
+                    <div class="opening__circle__bg2"></div>
+                    <div class="opening__info__content">
+                        <h1 class="opening__title">Чертежи и 3D модели</h1>
+                        <p class="opening__subtitle">любой сложности</p>
+                        <p class="opening__text">Контроль выполнения задания на всех этапах проектирования</p>
+                        <button data-target=".modal__opening" class="opening__button">Получить консультацию</button>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+        <!-- about me -->
+            <section class="about__me">
+                <div class="about__bg1"></div>
+                <div class="about__bg2"></div>
+                <div class="about__content__container">
+
+                <img class="about__img" src="../img/about__me.png" alt="about me">
+                <div class="about__text__container">
+                    <h2 class="about__title">От автора</h2>
+                    <p class="about__text1">Меня зовут Василий. Уже более 10 лет я 
+                        работаю ведущим инженером на машиностроительном заводе.</p>
+                    <p class="about__text2">Используя <span>Kompas 3D</span> и <span>Autocad</span>, я могу
+                        создавать высококачественные 3D-модели, обеспечивающие 
+                        реалистичное представление конечного продукта. Эти модели 
+                        не только помогают визуализировать конструкцию, но также 
+                        помогают выявлять потенциальные проблемы и <span>оптимизировать 
+                        производственный процесс.</span></p>
+                        <div class="about__pluses">
+                            
+                            <p><span>10+ лет</span><br>работа инженером</p>
+                            <p><span>1500+ <br></span>выполненных проектов</p>
+
+                        </div>
+                </div>
+                </div>
+            </section>
+
+        <!--  help -->
+            <section class="help">
+                <h2 class="help__title">Помогу</h2>
+                <div class="help__card__container">
+                    <div class="help__card">
+                        <img src="../img/help1.png" alt="help">
+                        <p>Студентам</p>
+                    </div>
+                    <div class="help__card">
+                        <img src="../img/help2.png" alt="help">
+                        <p>Молодым специалистам</p>
+                    </div>
+                    <div class="help__card">
+                        <img src="../img/help3.png" alt="help">
+                        <p>Опытным специалистам</p>
+                    </div>
+                    <div class="help__card">
+                        <img src="../img/help4.png" alt="help">
+                        <p>Предпринималелям</p>
+                    </div>
+                </div>
+            </section>
+
+        <!-- services -->
+            <section class="services">
+
+
+                <!-- background serv start-->
+                <div class="services__background__container">
+                    <div class="services__bg__lines">
+                        <img src="../img/services__lines.png" alt="bg lines">
+                    </div>
+                    <div class="services__bg__circle1"></div>
+                    <div class="services__bg__circle2"></div>
+                    <div class="services__bg__circle3"></div>
+                </div>
+                <!-- background serv end-->
+
+                <div class="services__content__container">
+
+                    <h2 class="title__services">Услуги</h2>
+                    <p class="subtitle__services">Контроль выполнения задания на всех этапах проектирования</p>
+
+                    <div class="services__card__container">
+                        <div class="services__card _1">
+                            <img src="../img/services1.png" alt="serv 1">
+                            <p>Чертежи от 500 руб.</p>
+                            <button data-target=".modal__opening" class="services__button" id="services__media__btn">Заказать</button>
+                        </div>
+                        <div class="services__card _2">
+                            <img src="../img/services2.png" alt="serv 2">
+                            <p>Оцифровка от 700 руб.</p>
+                            <button data-target=".modal__opening" class="services__button" id="services__media__btn">Заказать</button>
+                        </div>
+                        <div class="services__card _3">
+                            <img src="../img/services3.png" alt="serv 3">
+                            <p>3D модели от 500 руб.</p>
+                            <button data-target=".modal__opening" class="services__button" id="services__media__btn">Заказать</button>
+                        </div>
+                    </div>
+
+                    <button data-target=".modal__opening" class="services__button">Заказать</button>
+                  
+                </div>
+
+
+                
+
+
+
+                
+            </section>
+
+        <!-- videos -->
+            <section class="videos">
+                <div class="videos__content__container">
+                    <div class="videos__form">
+                        <h2 class="videos__title">Обучающее видео</h2>
+                        <p class="videos__main__text1">
+                            Если вам требуется обучающее видео или 
+                            онлайн-урок, буду рад помочь вам!
+                        </p>
+                        <p class="videos__main__text2">
+                            Могу записать подробное обучающее видео, 
+                            специально адаптированное к вашим потребностям
+                             или провести онлайн-урок, что позволит 
+                             взаимодействовать в режиме реального времени.
+                        </p>
+                        <p class="videos__text__price">
+                            от 1000 руб./час
+                        </p>
+                        <button data-target=".modal__opening" class="videos__button">Заказать</button>
+                    </div>
+                    <div class="videos__bg"></div>
+                </div>
+            </section>
+
+        <!-- advantages -->
+            <section class="advantages">
+                <h2 class="advantages__title">Преимущества</h2>
+                <div class="advantages__card__container">
+                    <div class="advantages__card">
+                        <img src="../img/advantages1.png" alt="advantages">
+                        <p>Опыт</p>
+                    </div>
+                    <div class="advantages__card">
+                        <img src="../img/advantages2.png" alt="advantages2">
+                        <p>Качество</p>
+                    </div>
+                    <div class="advantages__card">
+                        <img src="../img/advantages3.png" alt="advantages3">
+                        <p>Точность</p>
+                    </div>
+                    <div class="advantages__card">
+                        <img src="../img/advantages4.png" alt="advantages4">
+                        <p>Скорость</p>
+                    </div>
+                </div>
+            </section>
+
+        <!-- works -->
+            <section class="works">
+                <div class="works__bg">
+                    <img class="gear" src="../img/works__bg.png" alt="gear">
+                    <div class="works__bg__cirle1"></div>
+                    <div class="works__bg__cirle2"></div>
+                </div>
+
+                <div class="works__content__container">
+                    <h2 class="works__title">Примеры выполненных работ</h2>
+                    <ul class="works__links">
+                        <li><a class="work__link _active" href="#!" id="link__1">3д модели</a></li>
+                        <li><a class="work__link" href="#!" id="link__2">Чертежи</a></li>
+                        <li><a class="work__link" href="#!" id="link__3">Оцифровка</a></li>
+                    </ul>
+                    <div class="works__cards">
+
+                         <!-- models -->
+                        <div class="work_models__container _active">
+                            <div class="card__models">
+                                <img src="../img/models1__card.png" alt="models1">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                            <div class="card__models">
+                                <img src="../img/models2__card.png" alt="models2">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                            <div class="card__models">
+                                <img src="../img/models3__card.png" alt="models3">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                            <div class="card__models">
+                                <img src="../img/models4__card.png" alt="models4">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                            <div class="card__models">
+                                <img src="../img/models5__card.png" alt="models5">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                        </div>
+
+                            <!-- drawings -->
+
+                        <div class="work__drawings__container">
+                            <div class="card__drawings">
+                                <img src="../img/drawings1__card.png" alt="drawings1">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                            <div class="card__drawings">
+                                <img src="../img/drawings2__card.png" alt="drawings2">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                            <div class="card__drawings">
+                                <img src="../img/drawings3__card.png" alt="drawings3">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                            <div class="card__drawings">
+                                <img src="../img/models1__card.png" alt="drawings4">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                            <div class="card__drawings">
+                                <img src="../img/drawings2__card.png" alt="drawings5">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                        </div>
+
+                            <!-- digitization -->
+
+                        <div class="work__digitization__container">
+                            <div class="card__digitization">
+                                <img src="../img/digitization1__card.png" alt="digitization1">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                            <div class="card__digitization">
+                                <img src="../img/drawings2__card.png" alt="digitization2">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                            <div class="card__digitization">
+                                <img src="../img/digitization1__card.png" alt="digitization3">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                            <div class="card__digitization">
+                                <img src="../img/models1__card.png" alt="digitization4">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+                            <div class="card__digitization">
+                                <img src="../img/digitization1__card.png" alt="digitization5">
+                                <p>По спецзаказу выполнили весьма непростую 3D-модель подводного крыла, 
+                                    которое устанавливается на доску для серфинга. Данное крыло
+                                    находится во время движения под водой. <br>
+                                    Профиль крыла выполнен в виде сложного аэродинамического профиля,
+                                    полученного путем использования команды "тело по сечениям".
+                                    В качестве направляющей выступила выгнутая дуга. </p>
+                            </div>
+
+                        </div>
+
+                        
+                        
+                        
+                    </div>
+                    <div class="works__nav">
+                        <p class="cursor__works" id="left__scroll"> < </p>
+                        <p class="cursor__works" id="right__scroll"> > </p>
+                    </div>
+
+
+                </div>
+
+            </section>
+        
+        <!-- faq -->
+            <section class="faq">
+                <h2 class="faq__title">Остались вопросы?</h2>
+
+                <div class="faq__bg__container">
+                    <div class="faq__img__bg"><img src="../img/faq__bg.png" alt="faq__bg"></div>
+                    <div class="faq__bg__circle1"></div>
+                    <div class="faq__bg__circle2"></div>
+                </div>
+                
+                <div class="faq__text__container">
+
+                    <div class="faq__text__card 1">
+                        <div class="faq__question"><p>Сколько стоит чертёж? </p><p class="faq__text__icon">^</p></div>
+                        <p class="faq__answer 1" id="faq__l1">
+                            На конечную стоимость чертежа влияет множество факторов: формат чертежа и его наполнение, сроки сдачи проекта, сложность технического задания, методы создания чертежа (на основе 3D-модели заказчика/на основе вновь создаваемой 3D-модели/оцифровка/прочие методы) 
+                            Для оценки стоимости чертежа необходимо выслать исходные данные и техническое задание.
+                        </p>
+                    </div>
+
+                    <div class="faq__text__card 2">
+                        <div class="faq__question"><p>Как можно связаться?</p><p class="faq__text__icon">^</p></div>
+                        <p class="faq__answer _2" id="faq__l2">
+                            <a class="answer__tel" href="tel:+79081531283" target="_blank"></span>Позвонить по номеру</span> +7 (908) 153-12-83</a>
+                            <a class="answer__vk" href="https://vk.com/vf0911" target="_blank">Написать в <span>ВК</span></a>
+                            <a class="answer__tg" href="https://t.me/vasilyfomin1" target="_blank">Написать в <span>Телеграмм</span></a>
+                            <a class="answer__whatsapp" href="https://wa.me/89081531283" target="_blank">Или <span>Whatsapp</span></a>
+                        </p>
+                    </div>
+
+                    <div class="faq__text__card 3">
+                        <div class="faq__question"><p>Сколько нужно время для разработки чертежей или 3д моделей?</p><p class="faq__text__icon">^</p></div>
+                        <p class="faq__answer 3" id="faq__l3">Срок изготовления в среднем 1 — 3 дня. Все зависит от объема и загруженности.
+                            Максимальный срок изотовления сложных чертежей\3д моделей до 10 дней.</p>
+                    </div>
+
+                    <div class="faq__text__card 4">
+                        <div class="faq__question"><p>Сколько стоит создание 3D модели?</p><p class="faq__text__icon">^</p></div>
+                        <p class="faq__answer 4" id="faq__l4">Создание 3D модели зависит от методов проектирования, от технологии изготовления детали (если это не учебный проект), от сроков  сдачи проекта, от сложности геометрии самой модели. 
+
+                            Для оценки стоимости создания 3D-модели необходимо выслать первоначальные исходные данные.</p>
+                    </div>
+
+                    <div class="faq__text__card 5">
+                        <div class="faq__question"><p>Как проходит онлайн-урок?</p><p class="faq__text__icon">^</p></div>
+                        <p class="faq__answer 5" id="faq__l5">
+                            Онлайн-урок проходит по видеосвязи через Skype, Zoom, Discord или на  другой удобной вам платформе. <br>
+                            Онлайн-урок обычно включает следующие компоненты: <br>
+                            - Расписание: согласовываем подходящую дату и время урока. <br>
+                            - Подключение: перед уроком вам необходимо убедиться, что у вас есть стабильное подключение к Интернету и необходимое оборудование (например, компьютер, веб-камера и микрофон) для участия в видеозвонке. <br> 
+                            - Видеозвонок: в оговоренное время вы присоединитесь к онлайн-уроку, инициировав или приняв видеозвонок на выбранной платформе. <br>
+                            - Содержание урока. Зависит от вашей цели. Это может быть обучение новым навыкам работы в программе, совместная проработка сложных деталей\схем или обсуждение определенных тем. <br>
+                            - Взаимодействие: во время урока у вас будет возможность задавать вопросы, искать разъяснения и активно участвовать в процессе обучения. <br>
+                            
+                            Помните, что конкретная структура и содержание онлайн-урока могут различаться в зависимости от вашей цели.</p>
+                    </div>
+
+                    <div class="faq__text__card 6">
+                        <div class="faq__question"><p>Какой порядок работы?</p><p class="faq__text__icon">^</p></div>
+                        <p class="faq__answer _6" id="faq__l6">
+                            - Прием работы: согласование цены и сроков;<br>
+                            - Внесение предоплаты;<br>
+                            - Выполнение работы и уведомление заказчика путем отправления фото готовой работы;<br>
+                            - Внесение второй части оплаты;<br>
+                            - Отправление готовой работы в нужном вам формате.
+                             <a href="https://vk.com/topic-159969682_36608896" target="_blank">По желаю вы можете оставить отзыв о моей работе в группе ВК</a>
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+        <!-- reviews -->
+            <sections class="reviews">
+                <h2 class="reviews__title">Отзывы</h2>
+                <div class="reviews__bg__container">
+                    <div class="reviews__img__bg"><img src="../img/reviews__bg.png" alt="reviews__bg"></div>
+                    <div class="reviews__circle__bg"></div>
+                </div>
+
+                <div class="reviews__content__container">
+
+                    <div class="rev__navigation">
+                        <div class="rev__scroll" id="rev__btn__left"><p><</p></div>
+                        <div class="rev__scroll" id="rev__btn__right"><p>></p></div>
+                    </div>
+
+                    <div class="reviews__card__container">
+                        <div class="reviews__card">
+                            <div class="reviews__img__text">
+                                <img src="../img/reviews__card1.png" alt="rerv__card_1">
+                                <p class="reviews__card__title">Святослав Петрыкин</p>
+                            </div>
+                            <p class="reviews__card__maintext">Уже несколько раз работали 
+                                с Василием. Работа сделана качественно и в срок. Работать 
+                                вместе очень комфортно!</p>
+                        </div>
+                        <div class="reviews__card">
+                            <div class="reviews__img__text">
+                            <img src="../img/reviews__card2.png" alt="rerv__card_1">
+                                <p class="reviews__card__title">Ольга Аптрахимова</p>    
+                            </div>
+                            <p class="reviews__card__maintext">Очень помогли, если не спасли 
+                                — в короткие сроки, буквально за два дня до сдачи курсовой 
+                                работы могли вообще не допустить до дипломной работы. Я очень
+                                благодарна Вам. Буду ещё обращаться!</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </sections>
+
+        <!-- callback -->
+            <section class="callback">
+                <form class="callback__form" action="mail.php" method="POST">
+                    <input type="hidden" name="formid" value="форма перезвоните мне">
+
+                    <h2 class="calback__title">Оставить заявку</h2>
+                    <div class="callback__inputs">
+                        <label class="callback__name" for="name"></label>
+                        <input class="callback__input__name" type="text" name="name" autocomplete="off" required placeholder="Имя">
+                       
+                        <label class="callback__tel" for="tel"></label>
+                        <input class="callback__input__tel" id="phone__callback" type="tel" name="phone" autocomplete="off" pattern=".{19,}" title="Введите номер телефона полностью" maxlength="19" data-tel-input="" placeholder="Телефон">
+
+                        <button data-send="send-form" class="callback__button">Отправить</button>
+                    </div>
+                    
+
+                </form>
+            </section>
+
+        <!-- contacts__bot -->
+            <section class="contacts__bot">
+                <div class="contacts__bg__bot"><img src="../img/contacts__bot__bg.png" alt="bot__bg"></div>
+                <h2 class="contacts__bot__title">Контакты</h2>
+                <a class="contacts__bot__tel" href="tel:+79081531283">+7 (908) 153-12-83</a>
+                <div class="contacts__bot__social">
+                   <a href="https://vk.com/vf0911" target="_blank"><img src="../img/cotacts__bot1.png" alt="contacts__bot1"></a> 
+                    <a href="https://t.me/vasilyfomin1" target="_blank"><img src="../img/contacts__bot2.png" alt="contacts__bot2"></a>
+                </div>
+
+            </section>
+            
+        </main>
+
+        <footer class="footer">
+            <a class="footer__politics" href="">Политика конфиденциальности</a>
+            <a class="footer__dev" href="https://t.me/the_maximk" target="_blank">Разработка: Maxim Polyanin</a>
+            <a class="footer__dev" href="https://t.me/Vera_Ar" target="_blank">Дизайн: Fomina Vera</a>
+            <div class="politic__modal__content">
+                <div class="politic__content__contaner">
+                    <div class="politic__modal__closed">x</div>
+                       <h2>Политика в отношении обработки персональных данных</h2> 
+                            <h3>1. Общие положения</h3>
+                            <p>
+                            Настоящая политика обработки персональных данных составлена в соответствии с требованиями 
+                            Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки 
+                            персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые пример
+                            (далее – Оператор).
+                            </p>
+    
+                            <p>
+                            1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение 
+                            прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав
+                            на неприкосновенность частной жизни, личную и семейную тайну.
+                            </p>
+    
+                            <p>
+                            1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика)
+                            применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта https://пример.
+                            </p>
+    
+                            <h3>
+                            2. Основные понятия, используемые в Политике
+                            </h3> 
+    
+    
+                            <p>
+                            2.1. Автоматизированная обработка персональных данных – обработка персональных данных с помощью 
+                            средств вычислительной техники;
+                            </p>
+                            <p>
+                            2.2. Блокирование персональных данных – временное прекращение обработки персональных данных 
+                            (за исключением случаев, если обработка необходима для уточнения персональных данных);
+                            </p>
+    
+                            <p>
+                            2.3. Веб-сайт – совокупность графических и информационных материалов, а также программ для 
+                            ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу https://пример;
+                            </p>
+    
+    
+                            <p>
+                            2.4. Информационная система персональных данных — совокупность содержащихся в базах данных 
+                            персональных данных, и обеспечивающих их обработку информационных технологий и технических средств;
+                            </p>
+    
+                            <p>
+                            2.5. Обезличивание персональных данных — действия, в результате которых невозможно определить без 
+                            использования дополнительной информации принадлежность персональных данных конкретному Пользователю 
+                            или иному субъекту персональных данных;
+                            </p>
+    
+                            <p>
+                            2.6. Обработка персональных данных – любое действие (операция) или совокупность действий (операций), 
+                            совершаемых с использованием средств автоматизации или без использования таких средств с персональными 
+                            данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), 
+                            извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование,
+                            удаление, уничтожение персональных данных;
+                            </p>
+    
+                            <p>
+                            2.7. Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно 
+                            или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также 
+                            определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия 
+                            (операции), совершаемые с персональными данными;
+                            </p>
+    
+                            <p>
+                            2.8. Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или определяемому
+                            Пользователю веб-сайта https://пример;
+                            </p>
+    
+                            <p>
+                            2.9. Пользователь – любой посетитель веб-сайта https://пример;
+                            </p>
+    
+    
+                            <p>
+                            2.10. Предоставление персональных данных – действия, направленные
+                            на раскрытие персональных данных определенному лицу или определенному кругу лиц;
+                            </p>
+    
+                            <p>
+                            2.11. Распространение персональных данных – любые действия, направленные на раскрытие 
+                            персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление 
+                            c персональными данными неограниченного круга лиц, в том числе обнародование персональных данных
+                            в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление
+                            доступа к персональным данным каким-либо иным способом;
+                            </p>
+    
+                            <p>
+                            2.12. Трансграничная передача персональных данных – передача персональных данных на территорию 
+                            иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу;
+                            </p>
+    
+                            <p>
+                            2.13. Уничтожение персональных данных – любые действия, в результате которых персональные данные уничтожаются безвозвратно
+                            с невозможностью дальнейшего восстановления содержания персональных данных в информационной системе персональных данных и (или) уничтожаются материальные носители персональных данных.
+                            </p> 
+    
+    
+    
+                            <h3>
+                            3. Оператор может обрабатывать следующие персональные данные Пользователя
+                            </h3>
+    
+                            <p>
+                            3.1. Фамилия, имя, отчество;
+                            </p>
+    
+                            <p>
+                            3.2. Электронный адрес;
+                            </p>
+    
+                            <p>
+                            3.3. Номера телефонов;
+                            </p>
+    
+                            <p>
+                            3.4. Также на сайте происходит сбор и обработка обезличенных данных о посетителях 
+                            (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики 
+                            (Яндекс Метрика и Гугл Аналитика и других).
+                            </p>
+    
+                            <p>
+                            3.5. Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.
+                            </p> 
+    
+                            <h3>
+                            4. Цели обработки персональных данных
+                            </h3>
+    
+    
+                            <p>
+                            4.1. Цель обработки персональных данных Пользователя — информирование Пользователя посредством отправки электронных писем.
+                            </p>
+                            <p>
+                            4.2. Также Оператор имеет право направлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях
+                            и различных событиях. Пользователь всегда может отказаться от получения информационных сообщений, направив Оператору письмо 
+                            на адрес электронной почты пример с пометкой «Отказ от уведомлений о новых продуктах и услугах и специальных предложениях».
+                            </p>
+    
+                            <p>
+                            4.3. Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации 
+                            о действиях Пользователей на сайте, улучшения качества сайта и его содержания.
+                            </p>
+    
+                            <h3>
+                            5. Правовые основания обработки персональных данных
+                            </h3>
+    
+                            <p>
+                            5.1. Оператор обрабатывает персональные данные Пользователя
+                            только в случае их заполнения и/или отправки Пользователем 
+                            самостоятельно через специальные формы, расположенные на сайте https://пример. 
+                            Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, 
+                            Пользователь выражает свое согласие с данной Политикой.
+                            </p>
+    
+                            <p>
+                            5.2. Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено
+                            в настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).
+                            </p>
+    
+                            <h3>
+                            6. Порядок сбора, хранения, передачи и других видов обработки персональных данных
+                            </h3>
+    
+                            <p>
+                            Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается
+                            путем реализации правовых, организационных и технических мер, необходимых для выполнения 
+                            в полном объеме требований действующего законодательства в области защиты персональных данных.
+                            </p>
+    
+                            <p>
+                            6.1. Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, 
+                            исключающие доступ к персональным данным неуполномоченных лиц.
+                            </p>
+                            <p>
+                            6.2. Персональные данные Пользователя никогда, ни при каких условиях не будут переданы 
+                            третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства.
+                            </p>
+    
+    
+                            <p>
+                            6.3. В случае выявления неточностей в персональных данных, Пользователь может актуализировать 
+                            их самостоятельно, путем направления Оператору уведомление на адрес электронной почты Оператора 
+                            пример с пометкой «Актуализация персональных данных».
+                            </p>
+    
+                            <p>
+                            6.4. Срок обработки персональных данных является неограниченным. Пользователь может в любой
+                            момент отозвать свое согласие на обработку персональных данных, направив Оператору уведомление
+                            посредством электронной почты на электронный адрес Оператора пример с пометкой «Отзыв согласия 
+                            на обработку персональных данных».
+                            </p>
+    
+                            <h3>
+                            7. Трансграничная передача персональных данных
+                            </h3>
+    
+                            <p>
+                            7.2. Трансграничная передача персональных данных на территории иностранных государств, не отвечающих 
+                            вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме 
+                            субъекта персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, 
+                            стороной которого является субъект персональных данных.
+                            </p> 
+    
+                            <h3>
+                            8. Заключительные положения
+                            </h3>
+    
+                            <p>
+                            8.1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его 
+                            персональных данных, обратившись к Оператору с помощью электронной почты пример.
+                            </p>
+    
+    
+                            <p>
+                            8.2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. 
+                            Политика действует бессрочно до замены ее новой версией.
+                            </p>
+    
+                            <p>
+                                8.3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу https://пример.
+                            </p>
+                    
+                </div>
+            </div>
+        </footer>
+
+        
+
+    </div> 
+    
+
+</body>
+</html>
